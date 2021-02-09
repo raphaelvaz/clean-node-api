@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "CommonJS", //quando gerar, gerar com module.exports e require
+        "target": "ES2019", //gerar pra essa versão
+        "esModuleInterop": true, // With flag esModuleInterop we can import CommonJS modules in compliance with es6 modules spec
+        "allowJs": true //permite adição de arquivos de configuração em js
+    }
+}
