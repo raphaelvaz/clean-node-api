@@ -6,7 +6,7 @@ export class SignUpController implements Controller {
   constructor (
     private readonly emailValidor: EmailValidator,
     private readonly addAccount: AddAccount
-  ) {}
+  ) { }
 
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
@@ -33,6 +33,7 @@ export class SignUpController implements Controller {
 
       return ok(account)
     } catch (error) {
+      console.error(error)
       return serverError()
     }
   }
