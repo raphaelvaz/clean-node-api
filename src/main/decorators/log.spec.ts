@@ -12,10 +12,10 @@ const makeController = (): Controller => {
       const httpResponse: HttpResponse = {
         statusCode: 200,
         body: {
+          id: 'any_id',
           name: 'any_name',
           email: 'any_name@mail.com',
-          password: 'any_password',
-          passwordConfirmation: 'any_password'
+          password: 'any_password'
         }
       }
       return await new Promise(resolve => resolve(httpResponse))
